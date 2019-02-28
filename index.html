@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>音乐播放器</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <script src="../node_modules/jquery/dist/jquery.js"></script>
+    <!-- 引入jQuery插件自定义滚动条 -->
+    <link rel="stylesheet" href="../malihu-custom-scrollbar-plugin-master/jquery.mCustomScrollbar.css">
+    <script src="../malihu-custom-scrollbar-plugin-master/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="./js/player.js"></script>
+    <script src="./js/progress.js"></script>
+    <script src="./js/lyric.js"></script>
+    <script src="./js/index.js"></script>
+    <link rel="stylesheet" href="index.css">
+
+</head>
+<body>
+    
+        <div class="header">
+            <h1>QQ音乐</h1>
+            <ul>
+                <li class="login">登录</li>
+                <li class="register">注册</li>
+            </ul>
+        </div>
+        <div class="content">
+            <div class="contentinfo">
+                <div class="contentleft">
+                    <div class="contenttool">
+                        <span><i></i>收藏</span>
+                        <span><i></i>添加到</span>
+                        <span><i></i>下载</span>
+                        <span><i></i>删除</span>
+                        <span><i></i>清空列表</span>
+                    </div>
+                    <div class="contentlist" data-mcs-theme="dark">
+                        <ul>
+                            <!-- <li>
+                                <div class="listcheck"><i></i></div>
+                                <div class="listnumber">1</div>
+                                <div class="listname">歌曲</div>
+                                <div class="listsinger">歌手</div>
+                                <div class="listtime">时长</div>
+                            </li>
+                            <li  class='listmusic'>
+                                    <div class="listcheck"><i></i></div>
+                                    也可以用input type=checkbox
+                                    <div class="listnumber">1</div>
+                                    <div class="listname">歌曲
+                                        <div class="listmenu">
+                                            <a href="" title="播放"></a>
+                                            title中的值在鼠标移入时将会显示
+                                            <a href="" title="添加"></a>
+                                            <a href="" title="下载"></a>
+                                            <a href="" title="分享"></a>
+                                        </div>
+                                    </div>
+                                    <div class="listsinger">歌手</div>
+                                    <div class="listtime">
+                                        <span>04:12</span>
+                                        <a href="" title="删除"></a>
+                                    </div>
+                            </li> -->
+                        </ul>
+                    
+                    </div>
+                </div>
+                <div class="contentright">
+                    <div class="songinfo">
+                        <a href="javasript:" class="songinfopic">
+                            <img src="../images/images/lnj.jpg" alt="">
+                        </a>
+                        <div class="songinfoname">歌曲名称：
+                            <a href="">爱情转移</a>
+                        </div>
+                        <div class="songinfosinger">歌手名：
+                                <a href="">爱情转移</a>
+                        </div>
+                        <div class="songinfoalbum">专辑名：
+                                <a href="">爱情转移</a>
+                        </div>
+                    
+                    </div>
+                    <div class="songlyricContainer">
+                        <ul class="songlyric">
+                            
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="footerinfo">
+                <a href="javaScript::" class="musicpre"></a>
+                <a href="javaScript::" class="musicplay"></a>
+                <a href="javaScript::" class="musicnext"></a>
+                <div class="musicprogress">
+                    <div class="progresstop">
+                        <span class="progressname">爱情转移</span>
+                        <span class="progresstime">00</span>
+                    </div>
+                    <div class="progressbar">
+                        <div class="progressline">
+                            <div class="progressdot"></div>
+                        </div>
+                    </div>
+                </div>
+                <a href="javaScript::" class="musicmode" title="播放模式"></a>
+                <a href="javaScript::" class="musicfav "></a>
+                <a href="javaScript::" class="musicdown"></a>
+                <a href="javaScript::" class="musiccomment"></a>
+                <a href="javaScript::" class="musiconly "></a>
+                <div class="musicvoice">
+                    <a href="javascript::" class="musicvoiceicon"></a>
+                    <div class="musicvoicebar">
+                        <div class="musicvoiceline">
+                            <div class="musicvoicedot"></div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+   <div class="backgr"></div>
+   <div class="mask"></div>
+   <audio src="" class="audio" ></audio>
+   
+</body>
+</html>
